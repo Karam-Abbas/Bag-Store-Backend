@@ -99,3 +99,12 @@ a:hover {
     padding: 20px;
   }
 }
+
+.error {
+  border:solid 1px black;
+  color:white;
+  background-color: #ff1e00;
+  padding:5px;
+  margin-top:5px;
+  margin-left: 20%;
+}
