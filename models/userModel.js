@@ -4,8 +4,8 @@ const userSchema = mongoose.Schema({
   fullName: String,
   email: String,
   password: String,
-  cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }],
-  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }],
+  cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "product" }],
+  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "product" }],
   contact: Number,
   picture: String,
 });

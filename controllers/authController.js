@@ -37,7 +37,7 @@ async function loginUser(req, res) {
       if (result) {
         let token = generateToken(user); // if both correct then setting up cookie
         res.cookie("token", token);
-        res.send("User logged in successfully!");
+        res.redirect("/shop");
       } else {
         return res.status(401).send("Invalid email or password!");
       }
