@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = mongoose.Schema({
+const ownerSchema = mongoose.Schema({
   fullName: {
     type: String,
     minLength: 3,
@@ -13,4 +13,4 @@ const userSchema = mongoose.Schema({
   ntnNo: Number,
 });
 
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("owner", ownerSchema);
